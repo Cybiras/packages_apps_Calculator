@@ -39,6 +39,22 @@
     <string name="digit8">8</string>
     <!-- Displayed numbers for the digit buttons -->
     <string name="digit9">9</string>
+    <!-- Displayed letters for the hex digit buttons -->
+    <string name="A">A</string>
+    <!-- Displayed letters for the hex digit buttons -->
+    <string name="B">B</string>
+    <!-- Displayed letters for the hex digit buttons -->
+    <string name="C">C</string>
+    <!-- Displayed letters for the hex digit buttons -->
+    <string name="D">D</string>
+    <!-- Displayed letters for the hex digit buttons -->
+    <string name="E">E</string>
+    <!-- Displayed letters for the hex digit buttons -->
+    <string name="F">F</string>
+    <!-- Displayed letters for the variable digit buttons -->
+    <string name="X">X</string>
+    <!-- Displayed letters for the variable digit buttons -->
+    <string name="Y">Y</string>
     <!-- Button name on screen to delete the last entered digit or operator -->
     <string name="del">DELETE</string>
     <!-- Button name on screen to clear the entire calculation field. [CHAR LIMIT=6] -->
@@ -86,8 +102,140 @@
     <string name="basic">Basic panel</string>
     <!-- Menu item text to take user to the screen with the advanced functions, such as sin, cos, ln, log, etc. -->
     <string name="advanced">Advanced panel</string>
+    <!-- Menu item text to take user to the screen with matrices. -->
+    <string name="matrix">Matrix panel</string>
+    <!-- Menu item text to take user to the screen with the graph. -->
+    <string name="graph">Graph panel</string>
+    <!-- Menu item text to take user to the screen with the function operators. -->
+    <string name="function">Function panel</string>
+    <!-- Menu item text to take user to the screen with the hex digits and operators. -->
+    <string name="hexPanel">Hex panel</string>
     <!-- Menu item text to clear the calculation history. -->
     <string name="clear_history">Clear history</string>
     <!-- Toast shown when text is copied to the clipboard. -->
     <string name="text_copied_toast">Text copied.</string>
+
+    <!--Content descriptions for accessibility. These strings will be read aloud to users who are using the calculator with
+    accessibility features enabled and should reflect the mathematical concept instead of a direct representation of what is shown
+    on the button-->
+    <string name="leftParenDesc">left parenthesis</string>
+    <string name="rightParenDesc">right parenthesis</string>
+    <string name="factorialDesc">factorial</string>
+    <string name="lnDesc">natural logarithm</string>
+    <string name="lgDesc">logarithm</string>
+    <string name="sqrtDesc">square root</string>
+    <string name="divDesc">divide</string>
+    <string name="mulDesc">multiply</string>
+    <string name="plusDesc">plus</string>
+    <string name="minusDesc">minus</string>
+    <string name="dotDesc">point</string>
+    <string name="powerDesc">power</string>
+    <string name="delDesc">delete</string>
+    <string name="clearDesc">clear</string>
+    <string name="tanDesc">tangent</string>
+    <string name="sinDesc">sine</string>
+    <string name="cosDesc">cosine</string>
+    <string name="eDesc">Euler\'s number</string>
+    <string name="piDesc">pi</string>
+    <string name="equalDesc">equals</string>
+
+    <!--Content descriptions for accessibility used as keys when determining which mathematical
+    concept description to speak when accessibility features are enabled. Order of the array is
+    important. -->
+    <string-array name="operators" translatable="false">
+        <item>\u0028(</item>
+        <item>\u0029</item>
+        <item>\u0021</item>
+        <item>\u33D1</item>
+        <item>\u33D2</item>
+        <item>\u221A</item>
+        <item>\u00F7</item>
+        <item>\u00D7</item>
+        <item>\u002B</item>
+        <item>\u2212</item>
+        <item>\u002E</item>
+        <item>\u005E</item>
+        <item>tan</item>
+        <item>sin</item>
+        <item>cos</item>
+        <item>\u03C0</item>
+        <item>\u003D</item>
+    </string-array>
+
+    <!--Content descriptions for accessibility. These strings will be read aloud to users who
+     are using the calculator with accessibility features enabled and hover over the edit text
+     field. These should reflect the mathematical concept instead of a direct representation of
+     what is shown in the text field. Order of the array is important.-->
+    <string-array name="operatorDescs">
+        <!-- Description for mathematical ( [CHAR LIMIT=200]-->
+        <item>left parenthesis</item>
+        <!-- Description for mathematical ) [CHAR LIMIT=200]-->
+        <item>right parenthesis</item>
+        <!-- Description for mathematical ! (factorial) function [CHAR LIMIT=200]-->
+        <item>factorial</item>
+        <!-- Description for mathematical ln [CHAR LIMIT=200]-->
+        <item>natural logarithm</item>
+        <!-- Description for mathematical log [CHAR LIMIT=200]-->
+        <item>logarithm</item>
+        <!-- Description for mathematical square root [CHAR LIMIT=200]-->
+        <item>square root</item>
+        <!-- Description for mathematical / [CHAR LIMIT=200]-->
+        <item>divided by</item>
+        <!-- Description for mathematical x [CHAR LIMIT=200]-->
+        <item>multiplied by</item>
+        <!-- Description for mathematical + [CHAR LIMIT=200]-->
+        <item>plus</item>
+        <!-- Description for mathematical - [CHAR LIMIT=200]-->
+        <item>minus</item>
+        <!-- Description for mathematical . [CHAR LIMIT=200]-->
+        <item>\u00A0point\u00A0</item>
+        <!-- Description for mathematical ^ [CHAR LIMIT=200]-->
+        <item>power</item>
+        <!-- Description for mathematical TAN [CHAR LIMIT=200]-->
+        <item>tangent</item>
+        <!-- Description for mathematical SIN [CHAR LIMIT=200]-->
+        <item>sine</item>
+        <!-- Description for mathematical COS [CHAR LIMIT=200]-->
+        <item>cosine</item>
+        <!-- Description for mathematical PI [CHAR LIMIT=200]-->
+        <item>pi</item>
+        <!-- Description for mathematical = [CHAR LIMIT=200]-->
+        <item>equals</item>
+    </string-array>
+
+    <string name="i" translatable="false">i</string>
+    <string name="percentage" translatable="false">%</string>
+    <string name="dx">dX</string>
+    <string name="dy">dY</string>
+    <string name="solveForX">Solve for X</string>
+    <string name="solveForY">Solve for Y</string>
+    <string name="integral" translatable="false">\u222B</string>
+    <string name="parentheses" translatable="false">( )</string>
+    <string name="mod">mod</string>
+    <string name="coma" translatable="false">,</string>
+
+    <string name="defaultGraphTitle">Function</string>
+    <string name="graphTitle">Function: </string>
+
+    <string name="inverse">Inv</string>
+    <string name="determinant">Det</string>
+    <string name="eigenvalue">Eigen</string>
+    <string name="solve">Solve</string>
+    <string name="dotProduct">Dot</string>
+    <string name="crossProduct">Cross</string>
+
+    <string name="hex">Hex</string>
+    <string name="bin">Bin</string>
+    <string name="dec">Dec</string>
+    
+    <string name="hexDesc">Hexadecimal</string>
+    <string name="binDesc">Binary</string>
+    <string name="decDesc">Decimal</string>
+    <string name="determinantDesc">Determinant</string>
+    <string name="eigenvalueDesc">Eigen Values</string>
+    
+    <string name="settings">Settings</string>
+    <string name="showHistory">Show History</string>
+    <string name="hideHistory">Hide History</string>
+
 </resources>
