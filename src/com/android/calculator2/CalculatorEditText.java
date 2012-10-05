@@ -29,6 +29,7 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -42,15 +43,8 @@ public class CalculatorEditText extends EditText {
         super(context, attrs);
         setCustomSelectionActionModeCallback(new NoTextSelectionMode());
         setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
-    }
-
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-       if (event.getActionMasked() == MotionEvent.ACTION_UP) {
-            // Hack to prevent keyboard and insertion handle from showing.
-           cancelLongPress();
-        }
-        return super.onTouchEvent(event);
+        InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.showSoftInput(this, InputMethodManager.SHOW_IMPLICIT);
     }
 
     @Override
@@ -149,7 +143,7 @@ public class CalculatorEditText extends EditText {
     }
 
     private boolean canPaste(CharSequence paste) {
-        return paste.length()>0;
+        return paste.length() > 0;
     }
 
     class NoTextSelectionMode implements ActionMode.Callback {
