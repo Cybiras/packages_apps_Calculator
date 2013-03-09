@@ -23,7 +23,7 @@ import android.view.View.OnFocusChangeListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.annotation.SuppressLint;
+
 import android.app.Activity;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -645,7 +645,7 @@ class Logic {
         setDeleteMode(DELETE_MODE_CLEAR);
     }
 
-    @SuppressLint("NewApi")
+   
     @SuppressWarnings("deprecation")
     RealMatrix solveMatrix() {
         final LinearLayout matrices = (LinearLayout) mActivity.findViewById(R.id.matrices);
@@ -781,9 +781,6 @@ class Logic {
         theMatrix.setId(R.id.theMatrix);
         if(android.os.Build.VERSION.SDK_INT < 16) {
             theMatrix.setBackgroundDrawable(mActivity.getResources().getDrawable(R.drawable.matrix_background));
-        }
-        else {
-            theMatrix.setBackground(mActivity.getResources().getDrawable(R.drawable.matrix_background));
         }
         for (int i=0; i<data.length; i++) {
             LinearLayout layout = new LinearLayout(mActivity);

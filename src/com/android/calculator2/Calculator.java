@@ -355,14 +355,16 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
                 break;
 
             case R.id.basic:
-                    if(mPager!=null) mPager.setCurrentItem(Panel.BASIC.getOrder(), true);
-                    else if(mLargePager!=null) mLargePager.setCurrentItem(LargePanel.BASIC.getOrder(), true);
+                if (!getBasicVisibility()) {
+                    if(mPager!=null) mPager.setCurrentItem(Panel.BASIC.getOrder());
+                    else if(mLargePager!=null) mLargePager.setCurrentItem(LargePanel.BASIC.getOrder());
                 }
                 break;
 
             case R.id.advanced:
-                    if(mPager!=null) mPager.setCurrentItem(Panel.ADVANCED.getOrder(), true);
-                    else if(mSmallPager!=null) mSmallPager.setCurrentItem(SmallPanel.ADVANCED.getOrder(), true);
+                if (!getAdvancedVisibility()) {
+                    if(mPager!=null) mPager.setCurrentItem(Panel.ADVANCED.getOrder());
+                    else if(mSmallPager!=null) mSmallPager.setCurrentItem(SmallPanel.ADVANCED.getOrder());
                 }
                 break;
 
