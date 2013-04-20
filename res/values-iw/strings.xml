@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--  Copyright (C) 2007 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
- -->
-
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">מחשבון</string>
     <string name="error">שגיאה</string>
@@ -31,40 +16,22 @@
     <string name="Y">Y</string>
     <string name="clear">נקה</string>
     <string name="del">מחק</string>
-    <string name="div">÷</string>
-    <string name="mul">×</string>
-    <string name="plus">+</string>
-    <string name="minus">−</string>
-    <string name="dot">.</string>
-    <string name="equal">=</string>
-    <string name="enter">↓</string>
     <string name="sin">sin</string>
     <string name="cos">cos</string>
     <string name="tan">tan</string>
-    <string name="pi">π</string>
     <string name="e">e</string>
     <string name="ln">ln</string>
     <string name="lg">log</string>
-    <string name="leftParen">(</string>
-    <string name="rightParen">)</string>
-    <string name="sqrt">√</string>
-    <string name="power">^</string>
-    <string name="factorial">!</string>
     <string name="matrix">מטריצה</string>
     <string name="graph">גרף</string>
     <string name="function">פונקציה</string>
     <string name="hexPanel">הקס</string>
     <string name="remove_from_history">הסר מההיסטוריה</string>
-    <string name="i">i</string>
-    <string name="percentage">%</string>
     <string name="dx">dX</string>
     <string name="dy">dY</string>
     <string name="solveForX">הפתרון עבור X</string>
     <string name="solveForY">הפתרון עבור Y</string>
-    <string name="integral">∫</string>
-    <string name="parentheses">( )</string>
     <string name="mod">mod</string>
-    <string name="coma">,</string>
     <string name="defaultGraphTitle">פונקציה</string>
     <string name="graphTitle">פונקציה:</string>
     <string name="inverse">Inv</string>
@@ -86,5 +53,4 @@
     <string name="hideHistory">הסתר הסטוריה</string>
     <string name="returnToBasic">חזרה לחלונית בסיסית</string>
     <string name="copy">העתק \"%s\"</string>
-
 </resources>

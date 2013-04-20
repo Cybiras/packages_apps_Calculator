@@ -60,8 +60,6 @@
     <!-- Button name on screen to clear the entire calculation field. [CHAR LIMIT=6]
     Left in English, because Google made it the same way - DoktorAkcel    -->
     <string name="clear">CLR</string>
-    <!-- Do not translate. Decimal point; don't translate. Displayed as button on screen. -->
-    <string name="dot">.</string>
     <!-- Displayed on buttons on screen for the sin function. -->
     <string name="sin">sin</string>
     <!-- Displayed on buttons on screen for the cos function. -->
@@ -102,7 +100,6 @@
     <string name="solveForY">Решить для Y</string>
     <string name="mod">mod</string>
 
-
     <string name="defaultGraphTitle">Функция</string>
     <string name="graphTitle">Функция: </string>
 
@@ -128,5 +125,4 @@
     <string name="showHistory">Показать историю</string>
     <string name="hideHistory">Спрятать историю</string>
 
-    <string name="returnToBasic">Возвращаться на основную панель</string>
-</resources>
+    <string name="returnToBasic">Возвращаться на основную панель</string></resources>
